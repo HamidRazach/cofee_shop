@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://i.postimg.cc/G3YHNB7c/latte-art.png" type="image/png">
+
+  <title>Coffee Shop | Lahore pakistan </title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <script>
+    let titleText = "Coffee Shop | Lahore pakistan  ";
+    let index = 0;
+    function scrollTitle() {
+      document.title = titleText.slice(index) + titleText.slice(0, index);
+      index = (index + 1) % titleText.length;
+    }
+    setInterval(scrollTitle, 200); 
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="javascript:void(0);" style="font-weight: 700;">Coffee Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu-teaser">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0);">Reservations</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0);">Contact</a></li>
+        </ul>
+        <a href="#" class="btn btn-reserve ms-3">Reserve Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <h1>The Perfect Brew for Every Mood</h1>
+      <img src="https://i.postimg.cc/2y5896VD/light-cofee.png" alt="Coffee Cup" class="img-fluid mt-3"
+        style="border-radius: 20%;">
+    </div>
+  </section>
+
+  <!-- Menu Teaser -->
+  <section class="menu-teaser" id="menu-teaser">
+    <div class="container text-center">
+      <h2>Our Popular Picks</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 menu-item">
+          <img src="https://i.postimg.cc/Wz9pnv73/Pngtree-cup-of-espresso-coffee-13148104.png" alt="Espresso"
+            class="img-fluid rounded">
+          <h5 class="mt-3">Espresso</h5>
+          <p class="menu-price">$4.00</p>
+        </div>
+        <div class="col-md-4 menu-item">
+          <img src="https://i.postimg.cc/3RrV5D7d/vecteezy-cappuccino-png-with-ai-generated-27309407.png"
+            alt="Cappuccino" class="img-fluid rounded">
+          <h5 class="mt-3">Cappuccino</h5>
+          <p class="menu-price">$5.50</p>
+        </div>
+        <div class="col-md-4 menu-item">
+          <img src="https://i.postimg.cc/L55zpmnt/Pngtree-top-of-coffee-latte-13301692.png" alt="Latte"
+            class="img-fluid rounded">
+          <h5 class="mt-3">Latte</h5>
+          <p class="menu-price">$6.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 Coffee Shop. All Rights Reserved.</p>
+      <p>
+        <a href="javascript:void(0);">About</a> |
+        <a href="javascript:void(0);">Social Media</a> |
+        <a href="javascript:void(0);">Contact</a>
+      </p>
+    </div>
+  </footer>
+  <!-- back to top -->
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="btn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
